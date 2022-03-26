@@ -1,17 +1,20 @@
+
 /**
  * CadConsultaCadastro4CallbackHandler.java
- *
+ * <p>
  * This file was auto-generated from WSDL
- * by the Apache Axis2 version: 1.7.5  Built on : May 06, 2017 (03:45:26 BST)
+ * by the Apache Axis2 version: 1.6.2  Built on : Apr 17, 2012 (05:33:49 IST)
  */
-package br.com.swconsultoria.nfe.wsdl.CadConsultaCadastroMT;
 
+package br.com.swconsultoria.nfe.wsdl.CadConsultaCadastro.rs;
 
 /**
  *  CadConsultaCadastro4CallbackHandler Callback class, Users can extend this class and implement
  *  their own receiveResult and receiveError methods.
  */
 public abstract class CadConsultaCadastro4CallbackHandler {
+
+
     protected Object clientData;
 
     /**
@@ -34,22 +37,28 @@ public abstract class CadConsultaCadastro4CallbackHandler {
     /**
      * Get the client data
      */
+
     public Object getClientData() {
         return clientData;
     }
+
 
     /**
      * auto generated Axis2 call back method for consultaCadastro method
      * override this method for handling normal response from consultaCadastro operation
      */
     public void receiveResultconsultaCadastro(
-        CadConsultaCadastro4Stub.NfeResultMsg result) {
+            CadConsultaCadastro4Stub.NfeResultMsg result
+    ) {
     }
 
     /**
      * auto generated Axis2 Error handler
      * override this method for handling error response from consultaCadastro operation
      */
-    public void receiveErrorconsultaCadastro(Exception e) {
+    public void receiveErrorconsultaCadastro(java.lang.Exception e) {
     }
+
+
 }
+    

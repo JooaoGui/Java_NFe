@@ -16,7 +16,7 @@ package br.com.swconsultoria.nfe.wsdl.CadConsultaCadastro.rs;
 
 import org.apache.axis2.client.Stub;
 
-public class CadConsultaCadastro4StubRs extends org.apache.axis2.client.Stub {
+public class CadConsultaCadastro4Stub extends org.apache.axis2.client.Stub {
     private static int counter = 0;
     protected org.apache.axis2.description.AxisOperation[] _operations;
     //hashmaps to keep the fault mapping
@@ -28,8 +28,8 @@ public class CadConsultaCadastro4StubRs extends org.apache.axis2.client.Stub {
      *Constructor that takes in a configContext
      */
 
-    public CadConsultaCadastro4StubRs(org.apache.axis2.context.ConfigurationContext configurationContext,
-                                      java.lang.String targetEndpoint)
+    public CadConsultaCadastro4Stub(org.apache.axis2.context.ConfigurationContext configurationContext,
+                                    java.lang.String targetEndpoint)
             throws org.apache.axis2.AxisFault {
         this(configurationContext, targetEndpoint, false);
     }
@@ -38,8 +38,8 @@ public class CadConsultaCadastro4StubRs extends org.apache.axis2.client.Stub {
     /**
      * Constructor that takes in a configContext  and useseperate listner
      */
-    public CadConsultaCadastro4StubRs(org.apache.axis2.context.ConfigurationContext configurationContext,
-                                      java.lang.String targetEndpoint, boolean useSeparateListener)
+    public CadConsultaCadastro4Stub(org.apache.axis2.context.ConfigurationContext configurationContext,
+                                    java.lang.String targetEndpoint, boolean useSeparateListener)
             throws org.apache.axis2.AxisFault {
         //To populate AxisService
         populateAxisService();
@@ -61,7 +61,7 @@ public class CadConsultaCadastro4StubRs extends org.apache.axis2.client.Stub {
     /**
      * Default Constructor
      */
-    public CadConsultaCadastro4StubRs(org.apache.axis2.context.ConfigurationContext configurationContext) throws org.apache.axis2.AxisFault {
+    public CadConsultaCadastro4Stub(org.apache.axis2.context.ConfigurationContext configurationContext) throws org.apache.axis2.AxisFault {
 
         this(configurationContext, "https://cad.sefazrs.rs.gov.br/ws/cadconsultacadastro/cadconsultacadastro4.asmx");
 
@@ -70,7 +70,7 @@ public class CadConsultaCadastro4StubRs extends org.apache.axis2.client.Stub {
     /**
      * Default Constructor
      */
-    public CadConsultaCadastro4StubRs() throws org.apache.axis2.AxisFault {
+    public CadConsultaCadastro4Stub() throws org.apache.axis2.AxisFault {
 
         this("https://cad.sefazrs.rs.gov.br/ws/cadconsultacadastro/cadconsultacadastro4.asmx");
 
@@ -80,7 +80,7 @@ public class CadConsultaCadastro4StubRs extends org.apache.axis2.client.Stub {
     /**
      * Constructor taking the target endpoint
      */
-    public CadConsultaCadastro4StubRs(java.lang.String targetEndpoint) throws org.apache.axis2.AxisFault {
+    public CadConsultaCadastro4Stub(java.lang.String targetEndpoint) throws org.apache.axis2.AxisFault {
         this(null, targetEndpoint);
     }
 
@@ -130,9 +130,9 @@ public class CadConsultaCadastro4StubRs extends org.apache.axis2.client.Stub {
      */
 
 
-    public CadConsultaCadastro4StubRs.NfeResultMsg consultaCadastro(
+    public CadConsultaCadastro4Stub.NfeResultMsg consultaCadastro(
 
-            CadConsultaCadastro4StubRs.ConsultaCadastro consultaCadastro0)
+            CadConsultaCadastro4Stub.ConsultaCadastro consultaCadastro0)
 
 
             throws java.rmi.RemoteException
@@ -181,11 +181,11 @@ public class CadConsultaCadastro4StubRs extends org.apache.axis2.client.Stub {
 
             java.lang.Object object = fromOM(
                     _returnEnv.getBody().getFirstElement(),
-                    CadConsultaCadastro4StubRs.NfeResultMsg.class,
+                    CadConsultaCadastro4Stub.NfeResultMsg.class,
                     getEnvelopeNamespaces(_returnEnv));
 
 
-            return (CadConsultaCadastro4StubRs.NfeResultMsg) object;
+            return (CadConsultaCadastro4Stub.NfeResultMsg) object;
 
         } catch (org.apache.axis2.AxisFault f) {
 
@@ -248,9 +248,9 @@ public class CadConsultaCadastro4StubRs extends org.apache.axis2.client.Stub {
      */
     public void startconsultaCadastro(
 
-            CadConsultaCadastro4StubRs.ConsultaCadastro consultaCadastro0,
+            CadConsultaCadastro4Stub.ConsultaCadastro consultaCadastro0,
 
-            final CadConsultaCadastro4CallbackHandlerRs callback)
+            final CadConsultaCadastro4CallbackHandler callback)
 
             throws java.rmi.RemoteException {
 
@@ -292,10 +292,10 @@ public class CadConsultaCadastro4StubRs extends org.apache.axis2.client.Stub {
                                     org.apache.axiom.soap.SOAPEnvelope resultEnv = resultContext.getEnvelope();
 
                                     java.lang.Object object = fromOM(resultEnv.getBody().getFirstElement(),
-                                            CadConsultaCadastro4StubRs.NfeResultMsg.class,
+                                            CadConsultaCadastro4Stub.NfeResultMsg.class,
                                             getEnvelopeNamespaces(resultEnv));
                                     callback.receiveResultconsultaCadastro(
-                                            (CadConsultaCadastro4StubRs.NfeResultMsg) object);
+                                            (CadConsultaCadastro4Stub.NfeResultMsg) object);
 
                                 } catch (org.apache.axis2.AxisFault e) {
                                     callback.receiveErrorconsultaCadastro(e);
@@ -417,12 +417,12 @@ public class CadConsultaCadastro4StubRs extends org.apache.axis2.client.Stub {
         return false;
     }
 
-    private  org.apache.axiom.om.OMElement  toOM(CadConsultaCadastro4StubRs.ConsultaCadastro param, boolean optimizeContent)
+    private  org.apache.axiom.om.OMElement  toOM(CadConsultaCadastro4Stub.ConsultaCadastro param, boolean optimizeContent)
             throws org.apache.axis2.AxisFault {
 
 
         try {
-            return param.getOMElement(CadConsultaCadastro4StubRs.ConsultaCadastro.MY_QNAME,
+            return param.getOMElement(CadConsultaCadastro4Stub.ConsultaCadastro.MY_QNAME,
                     org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -431,12 +431,12 @@ public class CadConsultaCadastro4StubRs extends org.apache.axis2.client.Stub {
 
     }
 
-    private org.apache.axiom.om.OMElement toOM(CadConsultaCadastro4StubRs.NfeResultMsg param, boolean optimizeContent)
+    private org.apache.axiom.om.OMElement toOM(CadConsultaCadastro4Stub.NfeResultMsg param, boolean optimizeContent)
             throws org.apache.axis2.AxisFault {
 
 
         try {
-            return param.getOMElement(CadConsultaCadastro4StubRs.NfeResultMsg.MY_QNAME,
+            return param.getOMElement(CadConsultaCadastro4Stub.NfeResultMsg.MY_QNAME,
                     org.apache.axiom.om.OMAbstractFactory.getOMFactory());
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -445,14 +445,14 @@ public class CadConsultaCadastro4StubRs extends org.apache.axis2.client.Stub {
 
     }
 
-    private org.apache.axiom.soap.SOAPEnvelope toEnvelope(org.apache.axiom.soap.SOAPFactory factory, CadConsultaCadastro4StubRs.ConsultaCadastro param, boolean optimizeContent, javax.xml.namespace.QName methodQName)
+    private org.apache.axiom.soap.SOAPEnvelope toEnvelope(org.apache.axiom.soap.SOAPFactory factory, CadConsultaCadastro4Stub.ConsultaCadastro param, boolean optimizeContent, javax.xml.namespace.QName methodQName)
             throws org.apache.axis2.AxisFault {
 
 
         try {
 
             org.apache.axiom.soap.SOAPEnvelope emptyEnvelope = factory.getDefaultEnvelope();
-            emptyEnvelope.getBody().addChild(param.getOMElement(CadConsultaCadastro4StubRs.ConsultaCadastro.MY_QNAME, factory));
+            emptyEnvelope.getBody().addChild(param.getOMElement(CadConsultaCadastro4Stub.ConsultaCadastro.MY_QNAME, factory));
             return emptyEnvelope;
         } catch (org.apache.axis2.databinding.ADBException e) {
             throw org.apache.axis2.AxisFault.makeFault(e);
@@ -475,16 +475,16 @@ public class CadConsultaCadastro4StubRs extends org.apache.axis2.client.Stub {
 
         try {
 
-            if (CadConsultaCadastro4StubRs.ConsultaCadastro.class.equals(type)) {
+            if (CadConsultaCadastro4Stub.ConsultaCadastro.class.equals(type)) {
 
-                return CadConsultaCadastro4StubRs.ConsultaCadastro.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return CadConsultaCadastro4Stub.ConsultaCadastro.Factory.parse(param.getXMLStreamReaderWithoutCaching());
 
 
             }
 
-            if (CadConsultaCadastro4StubRs.NfeResultMsg.class.equals(type)) {
+            if (CadConsultaCadastro4Stub.NfeResultMsg.class.equals(type)) {
 
-                return CadConsultaCadastro4StubRs.NfeResultMsg.Factory.parse(param.getXMLStreamReaderWithoutCaching());
+                return CadConsultaCadastro4Stub.NfeResultMsg.Factory.parse(param.getXMLStreamReaderWithoutCaching());
 
 
             }
